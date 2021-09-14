@@ -11,15 +11,48 @@ const cards = [
     surname: "",
     education: "Hogwarts ",
     post: "Dobby no longer has masters!",
-    avatarUrl: "https://1.bp.blogspot.com/-BiUv7RzaIkU/Xkikc_qxeCI/AAAAAAAAn8Q/qlu5ldrq_2o-LRqtf1GCxXWug4y0Ef76gCNcBGAsYHQ/s1600/DOBBY2.jpg",
+    avatarUrl:
+      "https://1.bp.blogspot.com/-BiUv7RzaIkU/Xkikc_qxeCI/AAAAAAAAn8Q/qlu5ldrq_2o-LRqtf1GCxXWug4y0Ef76gCNcBGAsYHQ/s1600/DOBBY2.jpg",
     date: "2 seconds ago",
   },
 ];
-
+const onlinerCards = [
+  {
+    theme: "АВТО ДЛЯ НАСТОЯЩИХ МУЖЧИН",
+    comment: 1250,
+    description:
+      "Toyota Land Cruiser 200 после обновления стал более защищенным",
+  },
+];
+const jobsCards = [
+  {
+    title: "Разработчик внутренних продуктов Fullstack / Frontend / Backend)",
+    company: "ООО СейГеймс",
+    city: "Минск",
+    titleDescription:
+      "Расширенный соцпакет: медицинское страхование, корпоративные занятия английским, компенсация занятий спортом.",
+    description:
+      "XB Software — компания в области разработки веб- и мобильных решений. С 2008 года мы предоставляем услуги полного цикла по разработке программного обеспечения под заказ, а также разрабатываем и реализуем собственные ИТ продукты.",
+    date: "3 сентября",
+  },
+];
+const vkCards = [
+  {
+    name: "Марио",
+    surname: "Касас",
+    avatarUrl:
+      "http://whatsnetworth.com/wp-content/uploads/2018/01/4acd5167fd3cb5872329b9dab580a389.jpeg",
+    post: "Hi everyone👋🏻 I want to leave the cinema and become a Frontend developer.This is very cool, I hope I can do it!",
+    date: "10 февраля 2021",
+    likeCount: 128970,
+    commentCount: "I support it! This is a cool idea",
+  },
+];
 
 function App() {
   return (
     <div className="App">
+      <h1>Task 1 Facebook</h1>
       {cards.map((card) => {
         const { name, surname, date, post, avatarUrl, education } = card;
 
@@ -34,19 +67,8 @@ function App() {
           />
         );
       })}
-      </div>
-  )}
-  const onlinerCards = [
-    {
-      theme: "АВТО ДЛЯ НАСТОЯЩИХ МУЖЧИН",
-      comment: 1250,
-      description: "Toyota Land Cruiser 200 после обновления стал более защищенным",
-    },
-  ];
-  function App() {
-    return (
-      <div className="App">
-        {onlinerCards.map((onlinerCard) => {
+      <h1>Task 2 Onliner</h1>
+      {onlinerCards.map((onlinerCard) => {
         const { theme, comment, description } = onlinerCard;
 
         return (
@@ -57,24 +79,7 @@ function App() {
           />
         );
       })}
-       </div>
-  );
-}
-const jobsCards = [
-  {
-    title: "Разработчик внутренних продуктов Fullstack / Frontend / Backend)",
-    company: "ООО СейГеймс",
-    city: "Минск",
-    titleDescription:
-      "Расширенный соцпакет: медицинское страхование, корпоративные занятия английским, компенсация занятий спортом.",
-    description:
-      "XB Software — компания в области разработки веб- и мобильных решений. С 2008 года мы предоставляем услуги полного цикла по разработке программного обеспечения под заказ, а также разрабатываем и реализуем собственные ИТ продукты.",
-    date: "3 сентября",
-  },
-];
-function App() {
-  return (
-    <div className="App">
+      <h1>Task 3 Rabota.by</h1>
       {jobsCards.map((jobsCard) => {
         const { title, company, city, description, titleDescription, date } =
           jobsCard;
@@ -90,24 +95,7 @@ function App() {
           />
         );
       })}
-     </div>
-);
-}
-const vkCards = [
-  {
-    name: "Марио",
-    surname: "Касас",
-    avatarUrl:
-      "http://whatsnetworth.com/wp-content/uploads/2018/01/4acd5167fd3cb5872329b9dab580a389.jpeg",
-    post: "Hi everyone👋🏻 I want to leave the cinema and become a Frontend developer.This is very cool, I hope I can do it!",
-    date: "10 февраля 2021",
-    likeCount: 128970,
-    commentCount: "I support it! This is a cool idea",
-  },
-];
-function App() {
-  return (
-    <div className="App">
+      <h1>Task 4 Vk.com</h1>
       {vkCards.map((vkCard) => {
         const {
           avatarUrl,
